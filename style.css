@@ -1,0 +1,187 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.bannertop{
+    height: 100vh;
+    width: 100%;
+    background-image: url('./img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color : #fff;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.bannertop::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(163.37deg, rgba(0, 0, 0, 0.15) 11.5%, #000000 90.67%);
+}
+
+.bannertop .text{
+    position: relative;
+    width: 60%;
+    z-index: 50;
+    margin: auto;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+.scrollbtn{
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30px;
+    background-color: rgba(128, 0, 128,0.2);
+    /* background-color: rgb(128, 0, 128); */
+    border:solid #fff 1px;
+    color:#fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.title{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: purple;
+}
+
+#onecauses{
+    padding-left: 30px;
+}
+#causes,#consequences{
+    padding: 50px;
+    margin: auto;
+    width: 80%;
+}
+
+.onecause{
+    width: 80%;
+    border-bottom: solid #dbdbdb 1px;
+    padding: 25px 0px;
+}
+
+.onecause h2, .card h2 {
+    font-size: 1.1em;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.onecause p{
+
+}
+
+#bannersec{
+    height: 50vh;
+    background-image: url(./img4.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    margin: 50px 0px;
+    position: relative;
+}
+
+#bannersec::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(97.09deg, rgba(179, 0, 139, 0.55) 0.23%, rgba(255, 0, 199, 0) 96.09%);
+}
+
+.card{
+    padding: 15px;
+    display: inline-block;
+    width: 30%;
+    min-width: 300px;
+    margin: auto;
+    background-color: #fff;
+    padding: 15px;
+    border: solid #dbdbdb 1px;
+    margin: 10px;
+    border-radius: 15px;
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.2) );
+    vertical-align: top;
+    transition: all 500ms;
+
+}
+
+.card:hover{
+   
+    background-color: purple;
+    color: #fff;
+    vertical-align: top;
+    transition: all 250ms;
+}
+
+#footer{
+    background-color: purple;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#footer p{
+    color: #fff;
+    font-weight: thin;
+    font-size: 1.3em;
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+
+#footer p::before{
+    content: '"';
+    position: absolute;
+    font-size: 3em;
+    top: -15px;
+    left: -30px;
+}
+
+body::-webkit-scrollbar{
+ width: 8px;   
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #dbdbdb;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: purple;
+    border-radius: 15px;
+    border: solid #dbdbdb 2px;
+}
